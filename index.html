@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tic-tac-toe</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-200">
+  <div id="success-alert" class="text-2xl text-green-800 bg-green-90 rounded-lg text-center mt-4 ">
+    <span class="font-medium alert"></span>
+  </div>
+  <div class="flex flex-col items-center justify-center">
+    <div id="game" class="bg-gray-500 p-8 mt-16 rounded-lg shadow-lg w-80 md:w-96">
+      <h1 class="text-2xl font-bold text-center text-white mb-4">tic-tac-toe</h1>
+      <div id="board" class="grid grid-cols-3 gap-2">
+        <div
+          class="cell border-2 border-white flex items-center justify-center h-20 w-20 text-2xl text-white cursor-pointer">
+        </div>
+        <div
+          class="cell border-2 border-white flex items-center justify-center h-20 w-20 text-2xl text-white cursor-pointer">
+        </div>
+        <div
+          class="cell border-2 border-white flex items-center justify-center h-20 w-20 text-2xl text-white cursor-pointer">
+        </div>
+        <div
+          class="cell border-2 border-white flex items-center justify-center h-20 w-20 text-2xl text-white cursor-pointer">
+        </div>
+        <div
+          class="cell border-2 border-white flex items-center justify-center h-20 w-20 text-2xl text-white cursor-pointer">
+        </div>
+        <div
+          class="cell border-2 border-white flex items-center justify-center h-20 w-20 text-2xl text-white cursor-pointer">
+        </div>
+        <div
+          class="cell border-2 border-white flex items-center justify-center h-20 w-20 text-2xl text-white cursor-pointer">
+        </div>
+        <div
+          class="cell border-2 border-white flex items-center justify-center h-20 w-20 text-2xl text-white cursor-pointer">
+        </div>
+        <div
+          class="cell border-2 border-white flex items-center justify-center h-20 w-20 text-2xl text-white cursor-pointer">
+        </div>
+      </div>
+    </div>
+    <button
+      class="flex justify-center items-center flex items-center px-4 py-2 mt-4 font-medium text-white bg-gray-800 rounded-lg hover:bg-gray-500 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80"
+      id="refreshbtn">
+      <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+          clip-rule="evenodd" />
+      </svg>
+      <span>Refresh</span>
+    </button>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
